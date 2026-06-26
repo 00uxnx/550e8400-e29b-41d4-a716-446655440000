@@ -59,7 +59,7 @@ local function Setup_notaHubsFolders()
 end
 
 local function loadCurrentGame()
-    local placeId = game.PlaceId
+    local placeId = game.GameId
 
     if placeId == notaHub.Supported_Games.Doors.id then
         if notaHub.Supported_Games.Doors.locked then
