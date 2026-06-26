@@ -18,7 +18,7 @@ local notaHub = {
     },
 
     Supported_Games = {
-        Doors = {locked = false, id = 6516141723 },
+        Doors = {locked = false, id = 2440500124 },
         Rivals = {locked = true, id = 6035872082 },
     },
 
