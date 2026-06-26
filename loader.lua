@@ -71,7 +71,7 @@ local function loadCurrentGame()
             return
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Doors/main.lua?token=GHSAT0AAAAAAD6LXKI7UAWOJCAG744YPNRO2R6YPHA"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Doors/main.lua"))()
 
     elseif hasId(notaHub.Supported_Games.Rivals.ids, placeId) then
         if notaHub.Supported_Games.Rivals.locked then
@@ -79,7 +79,7 @@ local function loadCurrentGame()
             return
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Rivals/Main.lua?token=GHSAT0AAAAAAD6LXKI6FFDDC4NCZLHRNYE22R6YPWQ"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Rivals/Main.lua"))()
     else
         game:GetService("Players").LocalPlayer:Kick("Game not supported!, please check the available games list on our discord!")
     end
