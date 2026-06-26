@@ -59,13 +59,14 @@ local function Setup_notaHubsFolders()
 end
 
 local function loadCurrentGame()
-    local placeId = game.GameId
+    local placeId = game.PlaceId
 
     if placeId == notaHub.Supported_Games.Doors.id then
         if notaHub.Supported_Games.Doors.locked then
             game:GetService("Players").LocalPlayer:Kick("Script locked for game. please check the available games list on our discord!")
             return
         end
+
         loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Doors/main.lua?token=GHSAT0AAAAAAD6LXKI7UAWOJCAG744YPNRO2R6YPHA"))()
 
     elseif placeId == notaHub.Supported_Games.Rivals.id then
@@ -73,6 +74,7 @@ local function loadCurrentGame()
             game:GetService("Players").LocalPlayer:Kick("Script locked for game. please check the available games list on our discord!")
             return
         end
+
         loadstring(game:HttpGet("https://raw.githubusercontent.com/00uxnx/550e8400-e29b-41d4-a716-446655440000/refs/heads/main/Rivals/Main.lua?token=GHSAT0AAAAAAD6LXKI6FFDDC4NCZLHRNYE22R6YPWQ"))()
     else
         game:GetService("Players").LocalPlayer:Kick("Game not supported!, please check the available games list on our discord!")
