@@ -1,1 +1,1 @@
-print("heyyy")
+print("inititiated game vantage")
